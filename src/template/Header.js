@@ -2,20 +2,30 @@ const Header=()=>{
     const view =`
 
 
-        <div>
-
-        <div class="header-logo"></div>
-        <h1>Blog Personal</h1>
-        <nav class="header-nav">
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Proyectos</a></li>
-                <li><a href="">Contacto</a></li>
+      <div class="Header-container">
+          <div class="Header-newspapper">
+            <div class="newspaper--icon" >
+                <span><i class="fa fa-newspaper aria-hidden="true"></i></span>
                 
-            </ul>
-        </nav>
-    
-    </div>
+            </div>
+          </div>
+          <div class="Header-newscarrousel">
+              sdlkasd
+          </div>
+          <div >
+              <ul class="Header-socialMedia">
+                  <li ><a href=""><i class="fab fa-facebook"></i></a></li>
+                  <li class="twitter"><a href=""><i class="fab fa-twitter"></i></a></li>
+                  <li class="youtube"><a href=""><i class="fab fa-youtube"></i></a></li>
+                  <li class="linkelin" ><a  href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  
+              </ul>
+          </div>
+
+          <div class="Header-search">buscador</div>
+
+      </div>
+      
     
     `;
     return view;

@@ -1,8 +1,47 @@
 body{
-    background-color: #ccc;
+    background-color: #dfe2f8;
+
    
 }
 *{
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.Header-container{
+    max-height: 50px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 113px 1fr 180px  113px ;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 0px ;
+}
+.Header-newspapper{
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.newspaper--icon{
+    grid-column: 2;
+    border-right: 1px solid #ccc;
+    box-shadow: 0px 1px 0px 0px #ccc;
+    
+}
+
+/* carrusel */
+
+
+
+
+
+/* social media */
+.Header-socialMedia{
+
+    grid-column:3 ;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    
 }
