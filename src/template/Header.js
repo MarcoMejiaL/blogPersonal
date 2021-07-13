@@ -12,17 +12,39 @@ const Header=()=>{
           <div class="Header-newscarrousel">
               sdlkasd
           </div>
-          <div >
+          <div class="Header__socialMedia-conatiner" >
+              
               <ul class="Header-socialMedia">
-                  <li ><a href=""><i class="fab fa-facebook"></i></a></li>
-                  <li class="twitter"><a href=""><i class="fab fa-twitter"></i></a></li>
-                  <li class="youtube"><a href=""><i class="fab fa-youtube"></i></a></li>
-                  <li class="linkelin" ><a  href=""><i class="fab fa-linkedin-in"></i></a></li>
+                  <li class="Header--button"><a class="fab fa-facebook" href="" ></a></li>
+                  <li class="Header--button"><a href="" class="fab fa-twitter"></a></li>
+                  <li class="Header--button"><a href="" class="fab fa-youtube"></a></li>                  
+                  <li class="Header--button"><a  href="" class="fab fa-linkedin-in"></a></li>                  
+                  
                   
               </ul>
+              
+            
           </div>
-
-          <div class="Header-search">buscador</div>
+          <div class="Header__search">
+              <p class="fas fa-search Header__search--main"></p>
+              
+              <ul class="Header__search--ul">
+                <li>
+                    
+                   <input  class="Header__search--styles"  type="text">
+                
+                </li>
+            </ul>
+    
+          </div>
+          
+          <!-- <div class="Header-search">
+              <div class="fa fa-search">
+                  <form action="">
+                      <input class="" type="text">
+                  </form>
+              </div>
+          </div> -->
 
       </div>
       

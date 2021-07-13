@@ -14,20 +14,25 @@ body{
     max-height: 50px;
     width: 100vw;
     display: grid;
-    grid-template-columns: 113px 1fr 180px  113px ;
+    grid-template-columns: 113px 1fr 180px  100px ;
     background-color: #fff;
-    box-shadow: 0px 0px 2px 0px ;
+    box-shadow: 0px 0px 2px 0px #ccc;
+    box-shadow: 0px 0px 2px 0px #ccc;
+    
+    position: absolute;
 }
 .Header-newspapper{
     grid-column: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-right: 1px solid #ccc;
+    
 
 }
 .newspaper--icon{
     grid-column: 2;
-    border-right: 1px solid #ccc;
-    box-shadow: 0px 1px 0px 0px #ccc;
+   
+    margin: auto;
     
 }
 
@@ -39,9 +44,53 @@ body{
 
 /* social media */
 .Header-socialMedia{
-
+    
     grid-column:3 ;
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr;
+    color: black;
     
 }
+.Header-socialMedia li a{
+    display: inline-block;
+}
+.Header--button{
+    margin: auto;
+}
+.Header__search {
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    margin-left: 10px;
+    
+}
+
+.Header__search ul{
+  display: none; 
+  list-style: none;
+  position: absolute;
+  width: 100px;
+  text-align: right;
+  margin: 0px 0px 0px -180px;
+  
+
+    
+}
+.Header__search:hover ul, .Header__search--ul:hover{
+    display: block;
+    position: absolute;
+    
+}
+
+.Header__search--styles{ 
+  border: 2px solid white;
+  box-shadow: 1px 1px   #ccc;
+  color: black;
+  font-size: 12px;
+  height: 40px;
+  padding: 0px 20px;
+  }
+.Header__search--styles::focus{
+   outline: none;
+}
+
+
