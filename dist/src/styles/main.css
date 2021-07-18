@@ -1,5 +1,20 @@
+:root{
+    --background-color: #dfe2f8;
+    --font-roboto: 'Roboto', sans-serif;
+    --soft-black: #201E1C;
+}
+html{
+    font-size: 62.5%;
+    font-family: var(--font-roboto);
+}
+.header{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 50px;
+}
 body{
-    background-color: #dfe2f8;
+    background-color:var(--background-color);
 
    
 }
@@ -11,15 +26,13 @@ body{
     padding: 0;
 }
 .Header-container{
-    max-height: 50px;
-    width: 100vw;
+    min-height: 50px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 113px 1fr 180px  100px ;
+    grid-template-columns: 1fr 5fr 2fr  1fr ;
     background-color: #fff;
-    box-shadow: 0px 0px 2px 0px #ccc;
-    box-shadow: 0px 0px 2px 0px #ccc;
-    
-    position: absolute;
+    box-shadow: 1px -1px 0 0 #eaeaea, inset 1px -1px 0 0 #eaeaea;   
+    position: relative;
 }
 .Header-newspapper{
     grid-column: 1;
@@ -31,8 +44,9 @@ body{
 }
 .newspaper--icon{
     grid-column: 2;
-   
     margin: auto;
+   font-size: 1.5rem;
+    
     
 }
 
@@ -41,7 +55,7 @@ body{
 
 
 
-
+/* fin carrusel */
 /* social media */
 .Header-socialMedia{
     
@@ -49,19 +63,32 @@ body{
     display: grid;
     grid-template-columns:  1fr 1fr 1fr 1fr;
     color: black;
+    height: 100%;
     
 }
 .Header-socialMedia li a{
     display: inline-block;
+    font-size: 1.5rem;
+    color: var(--soft-black);
+    
 }
 .Header--button{
     margin: auto;
 }
+/* fin social media */
+/* inicio search button */
 .Header__search {
     border-left: 1px solid #ccc;
     padding-left: 10px;
-    margin-left: 10px;
+    height: 100%;
+    width: 100%;
     
+    
+}
+.Header__search p{
+    margin: auto;
+    margin-top: 15px;
+    font-size: 1.5rem;
 }
 
 .Header__search ul{
@@ -78,13 +105,14 @@ body{
 .Header__search:hover ul, .Header__search--ul:hover{
     display: block;
     position: absolute;
+    top: 50px;
     
 }
 
 .Header__search--styles{ 
   border: 2px solid white;
   box-shadow: 1px 1px   #ccc;
-  color: black;
+  color: var(--soft-black);
   font-size: 12px;
   height: 40px;
   padding: 0px 20px;
