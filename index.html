@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+.main__container{
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+}
+
+.photo{    
+    height: calc(100vh - 80px);
+    width: 360px;
+    margin: 40px 0 20px 40px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background-image: url('./assets/img/Hellbat.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    overflow: hidden;
+}
+.main__title{
+    display: flex;
+    margin: 0 auto;
+    height: calc(100vh - 80px);
+    flex-direction: column;    
+    border: 1px solid black;
+    margin: 40px 0 20px 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width:990px){
+    .photo{
+        height: 270px;
+        width: 270px;
+        border-radius: 75%;
+        margin: 0 auto 50px;
+        
+    }
+}
+</style>
+<body>
+    
+        <div class="main__container">
+
+        
+      <div class="photo">
+    
+        </div>      
+        <div class="main__title">
+            <h1>titulo de la pagina</h1> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui incidunt hic error beatae repellat laborum explicabo quam corrupti vitae unde ipsum, illo quae repudiandae nihil molestias temporibus? Maxime, esse doloremque?</p>
+            <a href="">enlace</a>
+
+        </div>
+    </div>
+    
+</body>
+</html>

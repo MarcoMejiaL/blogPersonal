@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/241e03a3a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./ballon.css">
+</head>
+<style>
+    .personal__container{
+        margin:20px;
+        
+        
+    }
+    .personal__tittle
+    {
+        width: 600px;
+        color: var(--base_black);
+        font-size: 3.0rem;
+        margin-bottom: 8px;
+        
+        padding: 12px;
+
+        
+    }
+    .personal__data{
+        
+        width: 600px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(max-content, 400px));
+        grid-template-rows: repeat(auto-fill, 50px);
+        padding: 8px;
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+    .personal__data > p{
+        text-align: center;
+        color: black;
+        font-size: 1.8rem;
+        margin-bottom: 12px;
+    }
+    .personal__data p span{
+        color: var(--base_black);
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+    .personal__socialmedia {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        
+    }
+    .personal__socialmedia h2{
+        
+        text-align: center;
+        font-size: 1.9rem;
+        letter-spacing: 2px;
+        font-weight: 800;
+        color: var(--base_black);
+    }
+    .personal__socialmedia ul{
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        
+        
+    }
+    .personal__socialmedia ul li{
+        
+        margin: 12px 12px 8px 12px;
+        font-size: 20px;
+        width: 30px;
+        height: 30px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: white ;
+    }
+    .personal__socialmedia ul li a{
+        color: var(--base_red);
+    }
+    .personal__socialmedia ul li:hover  {
+        background-color: var(--base_red);
+        transition: all .5s ease-out;
+    }
+    .personal__socialmedia ul li:hover  a{
+        color: white;
+    }
+    @media (max-width: 610px){
+        .personal__data{
+            grid-template-columns: 1fr;
+            
+            
+        }
+        .personal__data p{
+            height: 50px;
+            margin-bottom: 0;
+        }
+    }
+</style>
+<body>
+<div class="personal__container">
+    <h2 class="personal__tittle">PERSONAL INFOS</h2>
+    <div class="personal__data">
+        <p>Name: <span>Marco</span></p>
+        <p>Last Name: <span>Mejia</span></p>
+        <p>Age: <span>31</span></p>
+        <p>Phone: <span>333333333</span></p>        
+        <p>Nationality: <span>Mexican</span></p>
+        <p>Email: <span aria-label="@gmail.com" data-balloon-pos="down" >marcomejia159010</span></p>
+        
+        
+        
+    </div>
+    <div class="personal__socialmedia">
+        
+            <h2>SOCIAL MEDIA</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>                                       
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+
+            </ul>
+        
+    </div>
+    <div class="personal__button">aqui va el boton</div>
+
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/241e03a3a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<style>
+.navbar-left ul, .navbar-right ul{
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    }
+    .navegarion_desktop{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 0 24px;
+        border-bottom: 1px solid #ccc;
+        
+        
+    }
+    .navbar-left{
+        display: flex;
+        margin-left:12px ;
+    }
+    .navbar-left ul{
+        
+        margin-left:12px ;
+    }
+    .navbar-left ul li a, .navbar-right ul li a{
+        text-decoration: none;
+        color: var(--ccc);
+        
+        padding: 8px;
+        border-radius: 8px;
+        
+    
+    }
+    .navbar-left ul li a:hover, .navbar-right ul li a:hover{
+    border: 1px solid var(--base_red);
+    color: var(--base_red);
+    }
+    @media (max-width:640px) {
+        .menuicono{
+            display:block ;
+        }
+        .navbar-left ul{
+            display: none;
+        }
+        .navbar__email{
+            display: none;
+        }   
+        .navegarion_desktop{
+            border:none;
+        }
+    }
+</style>
+<body>
+    <nav class="navegarion_desktop">
+        
+
+        <div class="navbar-left">
+            
+            <ul>
+                <li>
+                    
+                    <a href="">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-user"></i>
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-briefcase"></i>
+                        Portafolio
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-envelope"></i>
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fas fa-comments"></i>
+                        Blog
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+       
+    </nav>
+</body>
+</html>

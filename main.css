@@ -1,0 +1,23 @@
+
+
+
+
+
+:root{
+--base_red: #f2625f;
+--ccc: #ccc;
+--base_black: #666;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0 ;
+}
+html{
+    font-size: 62.5%;
+    
+}
+body{
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}

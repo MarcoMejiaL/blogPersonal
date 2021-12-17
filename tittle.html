@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<style>
+    .container__title{
+        margin: 0 auto;
+        width: 100%;
+        position: relative;
+        padding: 80px 0;
+        text-align: center;
+    }
+    .main__title{
+        color: var(--base_black);
+        font-size: 55px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        z-index: 2;
+        
+        
+    }
+    .main__title span{
+        color: var(--base_red);
+    }
+    .back__title{
+        opacity: 5%;
+        font-size: 110px;
+    left: 0;
+    letter-spacing: 10px;
+    line-height: .7;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    text-transform: uppercase;
+    font-weight: 800;
+    transform: translateY(-50%);
+    z-index: -1;
+    }
+</style>
+<body>
+    <div class="container__title">
+        <h1 class="main__title" >
+            About 
+            <span>me</span>
+        </h1>
+        <span class="back__title">
+            RESUME
+        </span>
+    </div>
+    
+</body>
+</html>
